@@ -4,8 +4,10 @@ import static br.com.caelum.vraptor.view.Results.status;
 
 import java.util.List;
 
+import org.hibernate.mapping.Collection;
 import org.joda.time.LocalDate;
 import org.joda.time.LocalTime;
+import org.openqa.jetty.html.Break;
 
 import br.com.caelum.agiletickets.domain.Agenda;
 import br.com.caelum.agiletickets.domain.DiretorioDeEstabelecimentos;
@@ -69,7 +71,6 @@ public class EspetaculosController {
 		if (sessao == null) {
 			result.notFound();
 		}
-
 		result.include("sessao", sessao);
 	}
 
